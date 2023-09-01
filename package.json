@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://1willcobb.github.io/Portfolio-React",
+  "homepage": "https://1willcobb.github.io/Portfolio-React/",
   "type": "module",
   "scripts": {
     "dev": "vite",
