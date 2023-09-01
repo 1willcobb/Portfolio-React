@@ -1,7 +1,9 @@
+
+
 const Resume = () => {
   return (
     <>
-      <a name="resume-anchor" className="anchor"></a>
+      <a id="resume-anchor" className="anchor"></a>
 
       <div className="resume">
         <h2>Full Stack Developer</h2>

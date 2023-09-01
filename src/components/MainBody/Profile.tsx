@@ -1,7 +1,7 @@
 const Profile = () => {
   return (
     <>
-      <a name="about-me-anchor" className="anchor"></a>
+      <a id="about-me-anchor" className="anchor"></a>
 
       <div className="blocks" id="about-me">
         <div id="headshot">

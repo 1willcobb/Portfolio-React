@@ -1,7 +1,7 @@
 const Portfolio = () => {
   return (
     <>
-      <a name="portfolio-anchor" className="anchor"></a>
+      <a id="portfolio-anchor" className="anchor"></a>
 
       <div className="blocks work" id="work">
         <div className="section-title portfolio-text">
