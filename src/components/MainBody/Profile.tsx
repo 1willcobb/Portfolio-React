@@ -19,7 +19,7 @@ const Profile = () => {
             Database infrastructure.
           </p>
           <p>
-            This portfolio was built using React.js below are projects ranging
+            This portfolio was built using React.js. Below are projects ranging
             from React.js and the MERN stack to web sockets, RESTful API
             deployment, Django, Three.js, and many more.
           </p>
