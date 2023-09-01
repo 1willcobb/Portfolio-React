@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../App.css"; // Import your stylesheet where CSS variables are defined
 
 const SideNav = () => {
   const [sideBarEnabled, setSideBarEnabled] = useState(false);
 
+  // Toggle open and shut the side bar nav
   const toggleSideBar = () => {
     setSideBarEnabled(!sideBarEnabled);
 
@@ -13,6 +14,29 @@ const SideNav = () => {
       sideBarEnabled ? "6rem" : "20rem"
     );
   };
+
+  // Update the CSS variable based on the screen width
+  useEffect(() => {
+    const handleResize = () => {
+      const root = document.documentElement;
+      if (window.innerWidth <= 992) {
+        root.style.setProperty("--side-bar-size", "0");
+      } else {
+        root.style.setProperty("--side-bar-size", "6rem");
+      }
+    };
+
+    // Add the resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Initialize the CSS variable based on the initial screen width
+    handleResize();
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <section className="side-nav">

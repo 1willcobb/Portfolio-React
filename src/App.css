@@ -37,7 +37,7 @@ h4 { font-weight: 300; }
   flex-direction: column;
   margin-left: var(--side-bar-size);
   margin-top: var(--top-nav-size);
-  transition: margin .5s ease;
+  transition: margin .2s ease;
 }
 
 header {
@@ -506,16 +506,15 @@ div {
 }
 
 @media screen and (max-width: 992px) {
+
   .header-container {
     padding-left: 2rem;
   }
-
 
   body {
     display: flex;
     flex-direction: column;
     margin-left: 0;
-    margin-top: var(--top-nav-size);
   }
   
   header {

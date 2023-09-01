@@ -62,7 +62,7 @@ const Portfolio = () => {
             <h3>Portfolio Website development</h3>
             <a href="https://www.1willcobb.com">
               <img
-                src="/images/Portfolio Assets-2.jpg"
+                src="/images/portfolio_asset_2.jpg"
                 alt="Will Cobbs portfolio site build"
               />
             </a>
