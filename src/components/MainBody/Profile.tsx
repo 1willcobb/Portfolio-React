@@ -6,7 +6,7 @@ const Profile = () => {
       <div className="blocks" id="about-me">
         <div id="headshot">
           <img
-            src="/images/will headshot.jpeg"
+            src="images/will headshot.jpeg"
             id="headshot"
             alt="Headshot of Will Cobb"
           />
