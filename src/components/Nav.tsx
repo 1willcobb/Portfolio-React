@@ -1,22 +1,34 @@
+import { NavLink } from "react-router-dom";
+
+
+
 const Nav = () => {
   return (
     <header>
       <div className="header-container">
         <h1>Will Cobb</h1>
-        <nav>
-          <a className="nav" href="#about-me-anchor">
-            About Me
-          </a>
-          <a className="nav" href="#portfolio-anchor">
-            Portfolio
-          </a>
-          <a className="nav" href="#resume-anchor">
-            Resume
-          </a>
-        </nav>
-        <a className="nav-btn" href="mailto:cobb.will@gmail.com">
-          Contact Me
-        </a>
+        <ul>
+          <li>
+            <NavLink className="nav" to="#about-me-anchor">
+              About Me
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav" to="#portfolio-anchor">
+              Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav" to="#resume-anchor">
+              Resume
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-btn" to="mailto:cobb.will@gmail.com">
+              Contact Me
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </header>
   );

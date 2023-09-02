@@ -56,7 +56,7 @@ const SideNav = () => {
             <a href="#about-me-anchor">About Me</a>
           </li>
           <li>
-            <a href="#work">Portfolio</a>
+            <a href="#portfolio-anchor">Portfolio</a>
           </li>
           <li>
             <a href="#resume-anchor">Resume</a>

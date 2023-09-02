@@ -64,6 +64,7 @@ header {
 
 .header-container h1 {
   padding-right: 1rem;
+  white-space: nowrap;
 }
 
 nav {
@@ -72,6 +73,7 @@ nav {
   justify-content: flex-end;
   padding: 10px 10px;
   text-decoration: none;
+  white-space: nowrap;
   transition: width .5s ease;
 }
 
@@ -202,6 +204,7 @@ div {
   text-decoration: none;
   padding: .5rem 2rem;
   cursor: pointer;
+  white-space: nowrap;
   height: 100%;
   border-left: var(--borders);
   background-color: var(--solid-color);
