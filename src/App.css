@@ -48,34 +48,6 @@ header {
   transition: width .5s ease;
 }
 
-.header-container {
-  display: flex;
-  flex: 1 0 0;
-  align-items: center;
-  width: 100%;
-  height: var(--top-nav-size);
-  z-index: 1;
-  border-bottom: var(--borders);
-  overflow:auto;
-  padding-left: 4rem;
-  text-shadow: var(--text-pop-subtle);
-  transition: margin .5s ease;
-}
-
-.header-container h1 {
-  padding-right: 1rem;
-  white-space: nowrap;
-}
-
-nav {
-  display: flex;
-  flex: 1 0 0;
-  justify-content: flex-end;
-  padding: 10px 10px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: width .5s ease;
-}
 
 footer {
   display: flex;
