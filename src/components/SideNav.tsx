@@ -45,7 +45,7 @@ const SideNav = () => {
         className="side-nav-selector"
         onClick={toggleSideBar}
       >
-        <img src="./icons/brown-icon-ham.png" alt="Ham menu" />
+        <img src="icons/brown-icon-ham.png" alt="Ham menu" />
       </div>
       <div
         id="menu"
@@ -69,25 +69,25 @@ const SideNav = () => {
       <div className="social-icons-nav">
         <a href="https://www.instagram.com/1willcobb">
           <img
-            src="/icons/brown-icon-IG.png"
+            src="icons/brown-icon-IG.png"
             alt="Instagram Button for Will Cobb"
           />
         </a>
         <a href="https://www.facebook.com/wacobb/">
           <img
-            src="/icons/brown-icon-fb.png"
+            src="icons/brown-icon-fb.png"
             alt="Facebook button for Will Cobb"
           />
         </a>
         <a href="https://www.linkedin.com/in/1willcobb/">
           <img
-            src="/icons/brown-icon-in.png"
+            src="icons/brown-icon-in.png"
             alt="Linkedin button for Will Cobb"
           />
         </a>
         <a href="https://www.youtube.com/channel/UCgeSDwPH-6ttgxdPANBjQPQ">
           <img
-            src="/icons/brown-icon-yt.png"
+            src="icons/brown-icon-yt.png"
             alt="Youtube button for Will Cobb"
           />
         </a>
