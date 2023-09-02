@@ -70,7 +70,7 @@ const SideNav = () => {
         <a href="https://www.instagram.com/1willcobb">
           <img
             src="icons/brown-icon-IG.png"
-            alt="Instagram Button for Will Cobb"
+            alt="Instagram Buttons for Will Cobb"
           />
         </a>
         <a href="https://www.facebook.com/wacobb/">
