@@ -7,4 +7,4 @@ export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
     base: '/',
-  })
+  };
