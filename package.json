@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "homepage": "https://1willcobb.github.io/Portfolio-React",
   "type": "module",
