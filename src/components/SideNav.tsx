@@ -45,7 +45,7 @@ const SideNav = () => {
         className="side-nav-selector"
         onClick={toggleSideBar}
       >
-        <img src="/icons/brown-icon-ham.png" alt="Ham menu" />
+        <img src="./icons/brown-icon-ham.png" alt="Ham menu" />
       </div>
       <div
         id="menu"
