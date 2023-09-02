@@ -10,7 +10,7 @@ export default defineConfig(({ command }) => {
   }
 
   if (command !== 'serve') {
-    config.base = '/Portfolio-React/'
+    config.base = '/1willcobb.com/'
   }
 
   return config
