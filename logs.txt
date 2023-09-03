@@ -1,0 +1,3 @@
+Logs for tracking notes and status: 
+
+- Dev branch updated with styled components on nav and side-nav
