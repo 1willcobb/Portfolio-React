@@ -1,5 +1,91 @@
 import { useState, useEffect } from "react";
+import { styled } from "styled-components";
+import { HashLink } from "react-router-hash-link";
 import "../App.css"; // Import your stylesheet where CSS variables are defined
+
+const SideNavStyled = styled.section`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: var(--side-bar-size);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-right: var(--borders);
+  transition: width var(--transition-time);
+  background-color: transparent;
+`;
+
+const MenuButton = styled.div`
+  display: flex;
+  flex: 1 0 0;
+  align-self: center;
+  padding: 10px 10px;
+  border: none;
+`;
+
+const MenuButtonImg = styled.img`
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  filter: drop-shadow(var(--text-pop-not-subtle));
+  transition: var(--transition-time);
+  &:hover {
+    transition: var(--transition-time);
+    transform: scale(1.2, 1.01);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.418));
+  }
+`;
+
+const SideNavHeaders = styled.div`
+  display: flex;
+  flex: 1;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  ul li {
+    list-style: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  a {
+    text-decoration: none;
+    white-space: nowrap;
+  }
+`;
+
+const SocialIcons = styled.div`
+  display: flex;
+  flex: 1 0 0;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px 10px;
+  img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    filter: drop-shadow(var(--text-pop-not-subtle));
+  }
+  img:hover {
+    transition: var(--transition-time);
+    transform: translate(-0.1rem, -0.1rem);
+    opacity: 75%;
+  }
+`;
+
+const HashLinkStyled = styled(HashLink)`
+  text-decoration: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: var(--transition-time);
+  &:hover {
+    color: var(--hover-color);
+  }
+`;
 
 const SideNav = () => {
   const [sideBarEnabled, setSideBarEnabled] = useState(false);
@@ -11,7 +97,7 @@ const SideNav = () => {
     const root = document.documentElement; // Get the root element
     root.style.setProperty(
       "--side-bar-size",
-      sideBarEnabled ? "6rem" : "20rem"
+      sideBarEnabled ? "6rem" : "10rem"
     );
   };
 
@@ -39,34 +125,34 @@ const SideNav = () => {
   }, []);
 
   return (
-    <section className="side-nav">
-      <div
-        id="menu-button"
-        className="side-nav-selector"
-        onClick={toggleSideBar}
-      >
-        <img src="icons/brown-icon-ham.png" alt="Ham menu" />
-      </div>
-      <div
+    <SideNavStyled>
+      <MenuButton id="menu-button" onClick={toggleSideBar}>
+        <MenuButtonImg src="icons/brown-icon-ham.png" alt="Ham menu" />
+      </MenuButton>
+      <SideNavHeaders
         id="menu"
-        className={`side-nav-headers ${sideBarEnabled ? "show" : "hidden"}`}
+        className={`${sideBarEnabled ? "show" : "hidden"}`}
       >
         <ul>
           <li>
-            <a href="#about-me-anchor">About Me</a>
+            <HashLinkStyled to="/pathLink#about-me-anchor">
+              About Me
+            </HashLinkStyled>
           </li>
           <li>
-            <a href="#portfolio-anchor">Portfolio</a>
+            <HashLinkStyled to="/pathLink#portfolio-anchor">
+              Portfolio
+            </HashLinkStyled>
           </li>
           <li>
-            <a href="#resume-anchor">Resume</a>
+            <HashLinkStyled to="/pathLink#resume-anchor">Resume</HashLinkStyled>
           </li>
           <li>
-            <a href="#contact-form">Contact</a>
+            <HashLinkStyled to="/pathLink#contact-form">Contact</HashLinkStyled>
           </li>
         </ul>
-      </div>
-      <div className="social-icons-nav">
+      </SideNavHeaders>
+      <SocialIcons>
         <a href="https://www.instagram.com/1willcobb">
           <img
             src="icons/brown-icon-IG.png"
@@ -91,8 +177,8 @@ const SideNav = () => {
             alt="Youtube button for Will Cobb"
           />
         </a>
-      </div>
-    </section>
+      </SocialIcons>
+    </SideNavStyled>
   );
 };
 
