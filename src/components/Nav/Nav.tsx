@@ -1,11 +1,7 @@
-import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 import { HashLink } from "react-router-hash-link";
-
-const Logo = styled.h1`
-  padding-right: 1rem;
-  white-space: nowrap;
-`;
+import Logo from "./Logo";
+import CallToAction from "./CallToAction";
 
 const NavUL = styled.ul`
   list-style: none;
@@ -36,39 +32,17 @@ const HashLinkStyled = styled(HashLink)`
   padding: 5px 15px;
   cursor: pointer;
   &:hover {
-    transition: .2s;
+    transition: 0.2s;
     transform: translate(-10px, -10px);
-    color:  var(--hover-color);
+    color: var(--hover-color);
   }
-`
-
-const NavLinkStyled = styled(NavLink)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: .5rem 2rem;
-  cursor: pointer;
-  white-space: nowrap;
-  height: 100%;
-  border-left: var(--borders);
-  background-color: var(--solid-color);
-  color: var(--background-color);
-  &:hover {
-    background-color: var(--hover-color);
-    color: var(--background-color)
-  }
-  &:active {
-    background-color: var(--active-color);
-    color:var(--solid-color);
-  }
-`
+`;
 
 const Nav = () => {
   return (
     <header>
       <HeaderContainer>
-        <Logo>Will Cobb</Logo>
+        <Logo />
         <NavUL>
           <li>
             <HashLinkStyled to="/pathLink#about-me-anchor">
@@ -81,14 +55,10 @@ const Nav = () => {
             </HashLinkStyled>
           </li>
           <li>
-            <HashLinkStyled to="/pathLink#resume-anchor">
-              Resume
-            </HashLinkStyled>
+            <HashLinkStyled to="/pathLink#resume-anchor">Resume</HashLinkStyled>
           </li>
         </NavUL>
-        <NavLinkStyled to="mailto:cobb.will@gmail.com">
-          Contact Me
-        </NavLinkStyled>
+        <CallToAction>Contact Me</CallToAction>
       </HeaderContainer>
     </header>
   );

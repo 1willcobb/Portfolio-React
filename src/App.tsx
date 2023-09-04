@@ -1,4 +1,4 @@
-import Nav from './components/Nav'
+import Nav from './components/Nav/Nav'
 import SideNav from './components/SideNav'
 import './App.css'
 import Banner from './components/Banner'
