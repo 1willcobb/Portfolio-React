@@ -23,6 +23,7 @@ const MenuButton = styled.div`
   align-self: center;
   padding: 10px 10px;
   border: none;
+  background-color: transparent;
 `;
 
 const MenuButtonImg = styled.img`
@@ -75,6 +76,9 @@ const SocialIcons = styled.div`
     transform: translate(-0.1rem, -0.1rem);
     opacity: 75%;
   }
+  @media (max-width: 992px) {
+    display:none;
+  }
 `;
 
 const HashLinkStyled = styled(HashLink)`
@@ -126,13 +130,10 @@ const SideNav = () => {
 
   return (
     <SideNavStyled>
-      <MenuButton id="menu-button" onClick={toggleSideBar}>
+      <MenuButton onClick={toggleSideBar}>
         <MenuButtonImg src="icons/brown-icon-ham.png" alt="Ham menu" />
       </MenuButton>
-      <SideNavHeaders
-        id="menu"
-        className={`${sideBarEnabled ? "show" : "hidden"}`}
-      >
+      <SideNavHeaders className={`${sideBarEnabled ? "show" : "hidden"}`}>
         <ul>
           <li>
             <HashLinkStyled to="/pathLink#about-me-anchor">
