@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { styled } from "styled-components";
 import { HashLink } from "react-router-hash-link";
-import "../App.css"; // Import your stylesheet where CSS variables are defined
 
 const SideNavStyled = styled.section`
   display: flex;
@@ -46,6 +45,7 @@ const SideNavHeaders = styled.div`
   align-self: center;
   justify-content: center;
   width: 100%;
+  transition: var(--transition-time);
   ul li {
     list-style: none;
     padding-top: 2rem;

@@ -9,7 +9,6 @@ const NavUL = styled.ul`
   padding: 10px 10px;
   text-decoration: none;
   white-space: nowrap;
-  transition: width var(--transition-time);
   @media (max-width: 750px) {
     display: none;
   }

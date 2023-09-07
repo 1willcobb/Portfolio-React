@@ -10,6 +10,7 @@ const HeaderContainer = styled.div`
   border-bottom: var(--borders);
   padding-left: 4rem;
   text-shadow: var(--text-pop-subtle);
+  transition: width var(--transition-time);
   width: calc(100% - var(--side-bar-size));
   position: fixed;
   top: 0;
