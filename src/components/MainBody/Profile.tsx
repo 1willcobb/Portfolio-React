@@ -1,11 +1,12 @@
 import SearchAnchor from "./SearchAnchor";
+import { StyledBlock } from "../GlobalStyledComponents/Styles";
 
 const Profile = () => {
   return (
     <>
       <SearchAnchor id="about-me-anchor"></SearchAnchor>
 
-      <div className="blocks" id="about-me">
+      <StyledBlock id="about-me">
         <div id="headshot">
           <img
             src="images/will headshot.jpeg"
@@ -26,7 +27,7 @@ const Profile = () => {
             deployment, Django, Three.js, and many more.
           </p>
         </div>
-      </div>
+      </StyledBlock>
     </>
   );
 };

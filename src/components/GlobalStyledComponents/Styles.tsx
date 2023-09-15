@@ -8,7 +8,6 @@ export const StyledBlock = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   border-bottom: var(--borders);
-  margin: 5px;
   @media (max-width: 992px) {
     flex-direction: column;
   }
