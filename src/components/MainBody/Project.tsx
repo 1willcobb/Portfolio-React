@@ -11,6 +11,7 @@ const Project = ({ cardName, address, imgLocation, altText }: Props) => {
   const ProjectCard = styled.div`
     display: flex;
     flex-direction: column-reverse;
+    flex: 1 0 100%;
     border: var(--borders);
     box-shadow: var(--text-pop-subtle);
     text-shadow: var(--text-pop-subtle);

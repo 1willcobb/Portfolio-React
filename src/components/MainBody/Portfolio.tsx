@@ -1,76 +1,86 @@
 import Project from "./Project";
+import styled from "styled-components";
+import { StyledBlock, SectionTitle } from "../GlobalStyledComponents/Styles";
+import SearchAnchor from "./SearchAnchor";
 
 const Portfolio = () => {
+  const StyledPortfolio = styled.div`
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: 0;
+    gap: 2rem;
+    margin: 2rem;
+  `;
+  const projectsList = [
+    {
+      cardName: "Task Titan",
+      address: "https://task-titan-bec51c55ebe5.herokuapp.com/",
+      imgLocation: "gif/task_titan.gif",
+      altText: "Task Titan Image",
+    },
+    {
+      cardName: "Tech Blog",
+      address: "https://tech-blog-1willcobb-830bce22bbd8.herokuapp.com/",
+      imgLocation: "gif/tech_blog.gif",
+      altText: "Tech Blog Image",
+    },
+    {
+      cardName: "Sailboat Cost of Living",
+      address: "https://github.com/1willcobb/sailboat_calculator",
+      imgLocation: "images/Sailboat_app.jpg",
+      altText: "Sailboat cost of living app",
+    },
+    {
+      cardName: "Google Docs and Web Sockets",
+      address:
+        "https://google-clone-1willcobb-v3-46671173cb17.herokuapp.com/documents/b75519f4-21fd-4dd3-8a6c-584f2d959199",
+      imgLocation: "images/google_doc.jpg",
+      altText: "Google Doc and web socket application",
+    },
+    {
+      cardName: "Employee CMS",
+      address: "https://github.com/1willcobb/Employee_CMS_CLI",
+      imgLocation: "images/CMS.jpg",
+      altText: "Employee CMS app image",
+    },
+    {
+      cardName: "Portfolio Website development",
+      address: "https://www.1willcobb.com",
+      imgLocation: "images/portfolio_asset_2.jpg",
+      altText: "Will Cobbs portfolio site build",
+    },
+    {
+      cardName: "Weather App",
+      address: "https://1willcobb.github.io/Weather_Dashboard/",
+      imgLocation: "images/Weather.jpg",
+      altText: "Weather app image placeholder",
+    },
+  ];
+
   return (
     <>
-      <a id="portfolio-anchor" className="anchor"></a>
+      <SearchAnchor id="portfolio-anchor"></SearchAnchor>
 
-      <div className="blocks work" id="work">
-        <div className="section-title portfolio-text">
+      <StyledBlock>
+        <SectionTitle>
           <h2>Portfolio</h2>
           <br />
           <p>Projects launched and in development</p>
-        </div>
-        <div className="content">
-          <Project
-            cardName="Task Titan"
-            address="https://task-titan-bec51c55ebe5.herokuapp.com/"
-            imgLocation="gif/task_titan.gif"
-            altText="Task Titan Image"
-          />
-          <div className="card card-1">
-            <h3>Task Titan</h3>
-            <a href="https://task-titan-bec51c55ebe5.herokuapp.com/">
-              <img src="gif/task_titan.gif" alt="Task Titan Image" />
-            </a>
-          </div>
-          <div className="card other-card">
-            <h3>Tech Blog</h3>
-            <a href="https://tech-blog-1willcobb-830bce22bbd8.herokuapp.com/">
-              <img src="gif/tech_blog.gif" alt="Tech Blog Image" />
-            </a>
-          </div>
-          <div className="card other-card">
-            <h3>Sailboat Cost of Living</h3>
-            <a href="https://github.com/1willcobb/sailboat_calculator">
-              <img src="images/Sailboat_app.jpg" alt="Creator App Image" />
-            </a>
-          </div>
-          <div className="card other-card">
-            <h3>Employee CMS</h3>
-            <a href="https://github.com/1willcobb/Employee_CMS_CLI">
-              <img src="images/CMS.jpg" alt="Weather app image placeholder" />
-            </a>
-          </div>
-          <div className="card other-card">
-            <h3>Google Docs and Web Sockets</h3>
-            <a href="https://google-clone-1willcobb-v3-46671173cb17.herokuapp.com/documents/b75519f4-21fd-4dd3-8a6c-584f2d959199">
-              <img
-                src="images/google_doc.jpg"
-                alt="Weather app image placeholder"
-              />
-            </a>
-          </div>
-          <div className="card other-card">
-            <h3>Weather App</h3>
-            <a href="https://1willcobb.github.io/Weather_Dashboard/">
-              <img
-                src="images/Weather.jpg"
-                alt="Weather app image placeholder"
-              />
-            </a>
-          </div>
-          <div className="card other-card">
-            <h3>Portfolio Website development</h3>
-            <a href="https://www.1willcobb.com">
-              <img
-                src="images/portfolio_asset_2.jpg"
-                alt="Will Cobbs portfolio site build"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+        </SectionTitle>
+        <StyledPortfolio>
+          {projectsList.map((project) => (
+            <Project
+              cardName={project.cardName}
+              address={project.address}
+              imgLocation={project.imgLocation}
+              altText={project.altText}
+            />
+          ))}
+        </StyledPortfolio>
+      </StyledBlock>
     </>
   );
 };

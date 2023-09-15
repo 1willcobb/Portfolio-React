@@ -1,7 +1,9 @@
+import SearchAnchor from "./SearchAnchor";
+
 const Profile = () => {
   return (
     <>
-      <a id="about-me-anchor" className="anchor"></a>
+      <SearchAnchor id="about-me-anchor"></SearchAnchor>
 
       <div className="blocks" id="about-me">
         <div id="headshot">
