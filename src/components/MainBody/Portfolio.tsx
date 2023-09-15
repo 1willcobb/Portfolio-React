@@ -1,3 +1,5 @@
+import Project from "./Project";
+
 const Portfolio = () => {
   return (
     <>
@@ -10,6 +12,12 @@ const Portfolio = () => {
           <p>Projects launched and in development</p>
         </div>
         <div className="content">
+          <Project
+            cardName="Task Titan"
+            address="https://task-titan-bec51c55ebe5.herokuapp.com/"
+            imgLocation="gif/task_titan.gif"
+            altText="Task Titan Image"
+          />
           <div className="card card-1">
             <h3>Task Titan</h3>
             <a href="https://task-titan-bec51c55ebe5.herokuapp.com/">
@@ -25,19 +33,13 @@ const Portfolio = () => {
           <div className="card other-card">
             <h3>Sailboat Cost of Living</h3>
             <a href="https://github.com/1willcobb/sailboat_calculator">
-              <img
-                src="images/Sailboat_app.jpg"
-                alt="Creator App Image"
-              />
+              <img src="images/Sailboat_app.jpg" alt="Creator App Image" />
             </a>
           </div>
           <div className="card other-card">
             <h3>Employee CMS</h3>
             <a href="https://github.com/1willcobb/Employee_CMS_CLI">
-              <img
-                src="images/CMS.jpg"
-                alt="Weather app image placeholder"
-              />
+              <img src="images/CMS.jpg" alt="Weather app image placeholder" />
             </a>
           </div>
           <div className="card other-card">
