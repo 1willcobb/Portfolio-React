@@ -1,20 +1,41 @@
 import SearchAnchor from "./SearchAnchor";
 import { StyledBlock } from "../GlobalStyledComponents/Styles";
+import styled from "styled-components";
 
 const Profile = () => {
+
+  const AboutMeContent = styled.div`
+    justify-content: left;
+    padding: 3rem;
+    text-shadow: var(--text-pop-subtle);
+  `
+
+  const HeadShot = styled.div`
+      margin: 0;
+      max-height: 350px;
+      border-right: var(--borders);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 768px){
+        border: var(--borders);
+      }
+  `
+
+
   return (
     <>
       <SearchAnchor id="about-me-anchor"></SearchAnchor>
 
-      <StyledBlock id="about-me">
-        <div id="headshot">
+      <StyledBlock>
+        <HeadShot>
           <img
             src="images/will headshot.jpeg"
-            id="headshot"
             alt="Headshot of Will Cobb"
           />
-        </div>
-        <div className="content" id="about-me-content">
+        </HeadShot>
+        <AboutMeContent>
           <h2>Hey, I'm Will!</h2>
           <p>
             I am a Creative Full Stack Developer seeking work in Full Stack
@@ -26,7 +47,7 @@ const Profile = () => {
             from React.js and the MERN stack to web sockets, RESTful API
             deployment, Django, Three.js, and many more.
           </p>
-        </div>
+        </AboutMeContent>
       </StyledBlock>
     </>
   );

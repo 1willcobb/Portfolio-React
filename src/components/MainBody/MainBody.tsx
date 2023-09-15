@@ -1,17 +1,24 @@
-import ContactForm from "./ContactForm"
-import Portfolio from "./Portfolio"
-import Profile from "./Profile"
-import Resume from "./Resume"
+import ContactForm from "./ContactForm";
+import Portfolio from "./Portfolio";
+import Profile from "./Profile";
+import Resume from "./Resume";
+import styled from "styled-components";
 
 const MainBody = () => {
-  return (
-    <div className="main-body">
-        <Profile/>
-        <Portfolio/>
-        <Resume/>
-        <ContactForm/>
-    </div>
-  )
-}
+  const MainBodyStyled = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  `;
 
-export default MainBody
+  return (
+    <MainBodyStyled className="main-body">
+      <Profile />
+      <Portfolio />
+      <Resume />
+      <ContactForm />
+    </MainBodyStyled>
+  );
+};
+
+export default MainBody;

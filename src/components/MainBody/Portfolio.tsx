@@ -6,14 +6,14 @@ import SearchAnchor from "./SearchAnchor";
 const Portfolio = () => {
   const StyledPortfolio = styled.div`
     display: flex;
-    flex: 1 1 50%;
+    flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    overflow: 0;
     gap: 2rem;
     margin: 2rem;
   `;
+
   const projectsList = [
     {
       cardName: "Task Titan",

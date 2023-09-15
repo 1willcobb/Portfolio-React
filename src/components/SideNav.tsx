@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { styled } from "styled-components";
 import { HashLink } from "react-router-hash-link";
+import { SocialIcons } from "./GlobalStyledComponents/Styles";
 
 const SideNavStyled = styled.section`
   display: flex;
@@ -57,29 +58,7 @@ const SideNavHeaders = styled.div`
   }
 `;
 
-const SocialIcons = styled.div`
-  display: flex;
-  flex: 1 0 0;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-self: center;
-  padding: 10px 10px;
-  img {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    background-color: transparent;
-    filter: drop-shadow(var(--text-pop-not-subtle));
-  }
-  img:hover {
-    transition: var(--transition-time);
-    transform: translate(-0.1rem, -0.1rem);
-    opacity: 75%;
-  }
-  @media (max-width: 992px) {
-    display:none;
-  }
-`;
+
 
 const HashLinkStyled = styled(HashLink)`
   text-decoration: none;

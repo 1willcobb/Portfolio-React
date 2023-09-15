@@ -1,8 +1,27 @@
+import { SocialIcons } from "./GlobalStyledComponents/Styles";
+import styled from "styled-components";
+
 const Footer = () => {
+  const StyledFooter = styled.footer`
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 10px 0;
+      width: 100%;
+      & h4 {
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+  `
+
+
   return (
-    <footer>
+    <StyledFooter>
       <h4>Thanks for viewing</h4>
-      <div className="social-icons-footer">
+      <SocialIcons>
+        <div>
         <a href="https://www.instagram.com/1willcobb">
           <img
             src="icons/brown-icon-IG.png"
@@ -27,8 +46,9 @@ const Footer = () => {
             alt="Youtube button for Will Cobb"
           />
         </a>
-      </div>
-    </footer>
+        </div>
+      </SocialIcons>
+    </StyledFooter>
   );
 };
 

@@ -1,10 +1,13 @@
 import SearchAnchor from "./SearchAnchor";
 
+// Contact form block, currently setup as a button
 const ContactForm = () => {
   return (
     <>
-      <SearchAnchor id="contact-form"></SearchAnchor>
+      {/** Anchor for going to page */}
+      <SearchAnchor id="contact-form"></SearchAnchor> 
 
+      {/** Contact Button that oppens an email client */}
       <div className="form-box">
         <form action="mailto:cobb.will@gmail.com">
           <input
