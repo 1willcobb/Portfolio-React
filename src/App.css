@@ -52,27 +52,6 @@ h4 { font-weight: 300; }
 }
 
 
-.social-icons-footer{
-  display: flex;
-  align-items: center;
-  justify-content: cener;
-  padding-top: .5rem;
-}
-
-.social-icons-footer img {
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.social-icons-footer img:hover {
-  transition: .2s;
-  transform: translate(-.1rem, -.1rem);
-  opacity: 75%;
-}
-
-
 .banner {
   position: relative;
   width: 100%;
@@ -132,49 +111,6 @@ h4 { font-weight: 300; }
 }
 
 
-.form-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 20rem;
-  background-color: var(--solid-color);
-  
-}
-
-.form-box > * {
-  text-align: center;
-  color: var(--background-color);
-  text-shadow: var(--text-pop-subtle);
-  background-color: var(--solid-color);
-
-}
-
-.form-box label {
-  color: var(--background-color);
-  text-shadow: var(--text-pop-subtle);
-  background-color: var(--solid-color);
-}
-
-.form-box h2, p {
-  padding-bottom: 1rem;
-  
-}
-
-.form-box button {
-  align-items: center;
-  margin-top: .5rem;
-  padding: .2rem;
-  border: none;
-  border-style: none;
-  border: 1px solid var(--borders);
-  border-style: solid;
-}
-
-.form-box input {
-  border: 1px solid var(--borders);
-  border-style: solid;
-}
 
 .resume-container {
   display: flex;
@@ -211,18 +147,7 @@ h4 { font-weight: 300; }
   font-weight: 300;
 }
 
-.reachout-button:hover {
-  transition: .2s;
-  transform: translate(-.1rem, -.1rem);
-  opacity: 75%;
-}
 
-.reachout-button:active {
-  transition: .2s;
-  transform: translate(.1rem, .1rem);
-  opacity: 50%;
-  color: white
-}
 
 @media screen and (max-width: 992px) {
 

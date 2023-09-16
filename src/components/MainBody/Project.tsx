@@ -42,7 +42,7 @@ const Project = ({ cardName, address, imgLocation, altText }: Props) => {
     <ProjectCard>
       <CardTitle>{cardName}</CardTitle>
       <a href={address}>
-        <CardImg src={imgLocation} alt={altText} />
+        <CardImg src={imgLocation} alt={altText} loading="lazy"  width="200" height="200"/>
       </a>
     </ProjectCard>
   );

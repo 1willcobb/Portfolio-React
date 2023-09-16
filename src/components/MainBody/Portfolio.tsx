@@ -18,44 +18,44 @@ const Portfolio = () => {
     {
       cardName: "Task Titan",
       address: "https://task-titan-bec51c55ebe5.herokuapp.com/",
-      imgLocation: "gif/task_titan.gif",
+      imgLocation: "gif/task_titan.webp",
       altText: "Task Titan Image",
     },
     {
       cardName: "Tech Blog",
       address: "https://tech-blog-1willcobb-830bce22bbd8.herokuapp.com/",
-      imgLocation: "gif/tech_blog.gif",
+      imgLocation: "gif/tech_blog.webp",
       altText: "Tech Blog Image",
     },
     {
       cardName: "Sailboat Cost of Living",
       address: "https://github.com/1willcobb/sailboat_calculator",
-      imgLocation: "images/Sailboat_app.jpg",
+      imgLocation: "images/Sailboat_app.webp",
       altText: "Sailboat cost of living app",
     },
     {
       cardName: "Google Docs and Web Sockets",
       address:
         "https://google-clone-1willcobb-v3-46671173cb17.herokuapp.com/documents/b75519f4-21fd-4dd3-8a6c-584f2d959199",
-      imgLocation: "images/google_doc.jpg",
+      imgLocation: "images/google_doc.webp",
       altText: "Google Doc and web socket application",
     },
     {
       cardName: "Employee CMS",
       address: "https://github.com/1willcobb/Employee_CMS_CLI",
-      imgLocation: "images/CMS.jpg",
+      imgLocation: "images/CMS.webp",
       altText: "Employee CMS app image",
     },
     {
       cardName: "Portfolio Website development",
       address: "https://www.1willcobb.com",
-      imgLocation: "images/portfolio_asset_2.jpg",
+      imgLocation: "images/portfolio_asset_2.webp",
       altText: "Will Cobbs portfolio site build",
     },
     {
       cardName: "Weather App",
       address: "https://1willcobb.github.io/Weather_Dashboard/",
-      imgLocation: "images/Weather.jpg",
+      imgLocation: "images/Weather.webp",
       altText: "Weather app image placeholder",
     },
   ];
