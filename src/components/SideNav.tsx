@@ -58,8 +58,6 @@ const SideNavHeaders = styled.div`
   }
 `;
 
-
-
 const HashLinkStyled = styled(HashLink)`
   text-decoration: none;
   padding: 5px 15px;
@@ -132,7 +130,7 @@ const SideNav = () => {
           </li>
         </ul>
       </SideNavHeaders>
-      <SocialIcons>
+      <SocialIcons className={`${sideBarEnabled ? "show" : "hidden"}`}>
         <a href="https://www.instagram.com/1willcobb">
           <img
             src="icons/brown-icon-IG.png"
