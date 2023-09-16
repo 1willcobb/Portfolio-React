@@ -181,10 +181,6 @@ h4 { font-weight: 300; }
   }
 
 
-  .nav-btn {
-    padding: .1rem .5rem;
-  }
-
   .main-body #about-me {
     display: flex;
     flex-direction: column;
