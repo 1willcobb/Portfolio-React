@@ -13,6 +13,7 @@ React • Python • JavaScript • React Native • Django • HTML • CSS •
 ## Features of Portfolio
 
 * Nav buttons animate on hover and click
+* 
 * Nav bar static
 * flexbox for responsive layout
 * Custom social icons colored and linked
