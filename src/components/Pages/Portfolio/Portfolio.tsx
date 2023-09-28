@@ -1,19 +1,18 @@
 import Project from "./Project";
 import styled from "styled-components";
-import { StyledBlock, SectionTitle } from "../GlobalStyledComponents/Styles";
-import SearchAnchor from "./SearchAnchor";
+import { StyledBlock, SectionTitle } from "../../GlobalStyledComponents/Styles";
+
+const StyledPortfolio = styled.div`
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+`;
 
 const Portfolio = () => {
-  const StyledPortfolio = styled.div`
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 2rem;
-  `;
-
   const projectsList = [
     {
       cardName: "Task Titan",
@@ -62,8 +61,6 @@ const Portfolio = () => {
 
   return (
     <>
-      <SearchAnchor id="portfolio-anchor"></SearchAnchor>
-
       <StyledBlock>
         <SectionTitle>
           <h2>Portfolio</h2>

@@ -1,39 +1,31 @@
-import SearchAnchor from "./SearchAnchor";
-import { StyledBlock } from "../GlobalStyledComponents/Styles";
+import { StyledBlock } from "../../GlobalStyledComponents/Styles";
 import styled from "styled-components";
 
+const AboutMeContent = styled.div`
+  justify-content: left;
+  padding: 3rem;
+  text-shadow: var(--text-pop-subtle);
+`;
+
+const HeadShot = styled.div`
+  margin: 0;
+  max-height: 350px;
+  border-right: var(--borders);
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    border: var(--borders);
+  }
+`;
+
 const Profile = () => {
-
-  const AboutMeContent = styled.div`
-    justify-content: left;
-    padding: 3rem;
-    text-shadow: var(--text-pop-subtle);
-  `
-
-  const HeadShot = styled.div`
-      margin: 0;
-      max-height: 350px;
-      border-right: var(--borders);
-      img {
-        width: 100%;
-        height: 100%;
-      }
-      @media (max-width: 768px){
-        border: var(--borders);
-      }
-  `
-
-
   return (
     <>
-      <SearchAnchor id="about-me-anchor"></SearchAnchor>
-
       <StyledBlock>
         <HeadShot>
-          <img
-            src="images/will headshot.jpeg"
-            alt="Headshot of Will Cobb"
-          />
+          <img src="images/will headshot.jpeg" alt="Headshot of Will Cobb" />
         </HeadShot>
         <AboutMeContent>
           <h2>Hey, I'm Will!</h2>

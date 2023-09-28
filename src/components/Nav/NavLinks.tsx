@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const NavUL = styled.ul`
   list-style: none;
@@ -14,7 +14,7 @@ const NavUL = styled.ul`
   }
 `;
 
-const HashLinkStyled = styled(HashLink)`
+const StyledLink = styled(Link)`
   text-decoration: none;
   padding: 5px 15px;
   cursor: pointer;
@@ -29,15 +29,15 @@ const NavLinks = () => {
   return (
     <NavUL>
       <li>
-        <HashLinkStyled to="/pathLink#about-me-anchor">About Me</HashLinkStyled>
+        <StyledLink to="/aboutme">About Me</StyledLink>
       </li>
       <li>
-        <HashLinkStyled to="/pathLink#portfolio-anchor">
+        <StyledLink to="/portfolio">
           Portfolio
-        </HashLinkStyled>
+        </StyledLink>
       </li>
       <li>
-        <HashLinkStyled to="/pathLink#resume-anchor">Resume</HashLinkStyled>
+        <StyledLink to="/resume">Resume</StyledLink>
       </li>
     </NavUL>
   );

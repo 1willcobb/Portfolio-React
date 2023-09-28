@@ -1,4 +1,6 @@
 import { styled } from 'styled-components';
+import { Link } from 'react-router-dom';
+
 
 const LogoStyled = styled.h1`
   padding-right: 1rem;
@@ -7,7 +9,10 @@ const LogoStyled = styled.h1`
 
 const Logo = () => {
   return (
-    <LogoStyled>Will Cobb</LogoStyled>
+    <Link to="/">
+      <LogoStyled>Will Cobb</LogoStyled>
+    </Link>
+    
   )
 }
 

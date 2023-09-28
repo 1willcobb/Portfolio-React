@@ -1,22 +1,40 @@
-import Nav from './components/Nav/Nav'
-import SideNav from './components/SideNav'
-import './App.css'
-import Banner from './components/Banner'
-import MainBody from './components/MainBody/MainBody'
-import Footer from './components/Footer'
-import { BrowserRouter } from 'react-router-dom'
+import {
+  Footer,
+  Banner,
+  SideNav,
+  Nav,
+  AboutMe,
+  ContactForm,
+  Portfolio,
+  Resume,
+  Home
+} from "./components";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import styled from "styled-components";
 
 function App() {
+  const StyledRoutes = styled(Routes)`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  `;
 
   return (
-    <BrowserRouter>
-      <Nav/>
-      <SideNav/>
-      <Banner/>
-      <MainBody/>
-      <Footer/>
-    </BrowserRouter>
-  )
+    <>
+      <Nav />
+      <SideNav />
+      <Banner />
+      <StyledRoutes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/projects" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
+      </StyledRoutes>
+      <ContactForm/>
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

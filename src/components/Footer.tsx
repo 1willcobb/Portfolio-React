@@ -1,22 +1,22 @@
 import { SocialIcons } from "./GlobalStyledComponents/Styles";
 import styled from "styled-components";
 
+// Styled Component for the whole footer
+const StyledFooter = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+  & h4 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+`;
+
 // Footer with icons
 const Footer = () => {
-  // Styled Component for the whole footer
-  const StyledFooter = styled.footer`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px 0;
-    width: 100%;
-    & h4 {
-      font-weight: 400;
-      font-size: 15px;
-    }
-  `;
-
   return (
     <StyledFooter>
       <h4>Thanks for viewing</h4>

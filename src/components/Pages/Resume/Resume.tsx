@@ -1,10 +1,6 @@
-import SearchAnchor from "./SearchAnchor";
-
 const Resume = () => {
   return (
     <>
-      <SearchAnchor id="resume-anchor"></SearchAnchor>
-
       <div className="resume">
         <h2>Full Stack Developer</h2>
         <h3>Atascadero, CA</h3>
