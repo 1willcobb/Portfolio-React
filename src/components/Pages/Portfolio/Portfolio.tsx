@@ -70,6 +70,7 @@ const Portfolio = () => {
         <StyledPortfolio>
           {projectsList.map((project) => (
             <Project
+              key={project.cardName}
               cardName={project.cardName}
               address={project.address}
               imgLocation={project.imgLocation}

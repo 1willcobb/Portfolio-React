@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { styled } from "styled-components";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import { SocialIcons } from "./GlobalStyledComponents/Styles";
 
 const SideNavStyled = styled.section`
@@ -58,7 +58,7 @@ const SideNavHeaders = styled.div`
   }
 `;
 
-const HashLinkStyled = styled(HashLink)`
+const StyledLink = styled(Link)`
   text-decoration: none;
   padding: 5px 15px;
   cursor: pointer;
@@ -113,20 +113,20 @@ const SideNav = () => {
       <SideNavHeaders className={`${sideBarEnabled ? "show" : "hidden"}`}>
         <ul>
           <li>
-            <HashLinkStyled to="/pathLink#about-me-anchor">
+            <StyledLink to="/aboutme">
               About Me
-            </HashLinkStyled>
+            </StyledLink>
           </li>
           <li>
-            <HashLinkStyled to="/pathLink#portfolio-anchor">
+            <StyledLink to="/portfolio">
               Portfolio
-            </HashLinkStyled>
+            </StyledLink>
           </li>
           <li>
-            <HashLinkStyled to="/pathLink#resume-anchor">Resume</HashLinkStyled>
+            <StyledLink to="/resume">Resume</StyledLink>
           </li>
           <li>
-            <HashLinkStyled to="/pathLink#contact-form">Contact</HashLinkStyled>
+            <StyledLink to="mailto:cobb.will@gmail.com">Contact</StyledLink>
           </li>
         </ul>
       </SideNavHeaders>

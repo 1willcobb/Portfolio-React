@@ -1,11 +1,11 @@
 import { styled } from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface Props {
   children: string;
 }
 
-const NavLinkStyled = styled(NavLink)`
+const LinkStyled = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ const NavLinkStyled = styled(NavLink)`
 
 const CallToAction = ({ children }: Props) => {
   return (
-    <NavLinkStyled to="mailto:cobb.will@gmail.com">{children}</NavLinkStyled>
+    <LinkStyled to="mailto:cobb.will@gmail.com">{children}</LinkStyled>
   );
 };
 
