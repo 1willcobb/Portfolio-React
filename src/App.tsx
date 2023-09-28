@@ -1,6 +1,5 @@
 import {
   Footer,
-  Banner,
   SideNav,
   Nav,
   AboutMe,
@@ -19,20 +18,37 @@ const StyledRoutes = styled(Routes)`
   flex: 1;
 `;
 
+const style = {
+  display: "flex",
+  flexDirection: "column" as const, 
+  justifyContent: "space-between" as const, 
+};
+
+const BottomDiv = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Make the div span the entire width of the viewport */
+`;
+
 function App() {
   return (
     <>
-      <Nav />
       <SideNav />
-      <Banner />
-      <StyledRoutes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/resume" element={<Resume />} />
-      </StyledRoutes>
-      <ContactForm />
-      <Footer />
+      <div style={style}>
+        <div>
+          <Nav />
+          <StyledRoutes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+          </StyledRoutes>
+        </div>
+        <BottomDiv>
+          <ContactForm />
+          <Footer />
+        </BottomDiv>
+      </div>
     </>
   );
 }

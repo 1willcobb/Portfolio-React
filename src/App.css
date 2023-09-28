@@ -22,6 +22,10 @@
   --transition-time: .5s ease;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html{
   scroll-behavior: smooth;
 }

@@ -32,9 +32,7 @@ const NavLinks = () => {
         <StyledLink to="/aboutme">About Me</StyledLink>
       </li>
       <li>
-        <StyledLink to="/portfolio">
-          Portfolio
-        </StyledLink>
+        <StyledLink to="/portfolio">Portfolio</StyledLink>
       </li>
       <li>
         <StyledLink to="/resume">Resume</StyledLink>

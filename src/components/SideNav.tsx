@@ -130,7 +130,7 @@ const SideNav = () => {
           </li>
         </ul>
       </SideNavHeaders>
-      <SocialIcons className={`${sideBarEnabled ? "show" : "hidden"}`}>
+      <SocialIcons>
         <a href="https://www.instagram.com/1willcobb">
           <img
             src="icons/brown-icon-IG.png"
