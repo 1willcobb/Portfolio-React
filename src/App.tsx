@@ -25,7 +25,7 @@ const style = {
 };
 
 const BottomDiv = styled.div`
-  position: absolute;
+  justifyContent: "flexEnd",
   bottom: 0;
   width: 100%; /* Make the div span the entire width of the viewport */
 `;

@@ -113,14 +113,10 @@ const SideNav = () => {
       <SideNavHeaders className={`${sideBarEnabled ? "show" : "hidden"}`}>
         <ul>
           <li>
-            <StyledLink to="/aboutme">
-              About Me
-            </StyledLink>
+            <StyledLink to="/aboutme">About Me</StyledLink>
           </li>
           <li>
-            <StyledLink to="/portfolio">
-              Portfolio
-            </StyledLink>
+            <StyledLink to="/portfolio">Portfolio</StyledLink>
           </li>
           <li>
             <StyledLink to="/resume">Resume</StyledLink>
@@ -131,6 +127,18 @@ const SideNav = () => {
         </ul>
       </SideNavHeaders>
       <SocialIcons>
+        <a href="https://github.com/1willcobb">
+          <img
+            src="icons/brown-icon-git.png"
+            alt="github Button for Will Cobb"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/1willcobb/">
+          <img
+            src="icons/brown-icon-in.png"
+            alt="Linkedin button for Will Cobb"
+          />
+        </a>
         <a href="https://www.instagram.com/1willcobb">
           <img
             src="icons/brown-icon-IG.png"
@@ -141,12 +149,6 @@ const SideNav = () => {
           <img
             src="icons/brown-icon-fb.png"
             alt="Facebook button for Will Cobb"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/1willcobb/">
-          <img
-            src="icons/brown-icon-in.png"
-            alt="Linkedin button for Will Cobb"
           />
         </a>
         <a href="https://www.youtube.com/channel/UCgeSDwPH-6ttgxdPANBjQPQ">
