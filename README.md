@@ -28,6 +28,3 @@ React • Python • JavaScript • React Native • Django • HTML • CSS •
 
  ![Bottom clicable icons](./public/images/Screenshot%202023-05-07%20at%203.09.52%20PM.png)
 
-## Inspiration
-
-I wanted to make the site really interesting and engaging. I found inspiration in the framework from Virgina Orosa. I hope you enjoy.
