@@ -10,7 +10,8 @@ interface Props {
 const ProjectCard = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  flex: 1 0 100%;
+  flex: 1 1 100%;
+  max-width: 85%;
   border: var(--borders);
   box-shadow: var(--text-pop-subtle);
   text-shadow: var(--text-pop-subtle);

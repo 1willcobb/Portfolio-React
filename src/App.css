@@ -55,44 +55,27 @@ h4 { font-weight: 300; }
   transition: opacity 10s;
 }
 
-
 @media screen and (max-width: 992px) {
-
   body {
     display: flex;
     flex-direction: column;
     margin-left: 0;
   }
-
   .main-body {
     flex-direction: column;
   }
-
   .main-body #about-me {
     display: flex;
     flex-direction: row;
   }
-
-
 }
 
 @media screen and (max-width: 768px) {
-
-
 
   .main-body #about-me {
     display: flex;
     flex-direction: column;
     margin-top:2rem;
   }
-
-
-
-
-
-}
-
-
-
 
 }
