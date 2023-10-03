@@ -11,6 +11,7 @@ export const StyledBlock = styled.div`
   border-bottom: var(--borders);
   @media (max-width: 992px) {
     flex-direction: column;
+    display: none;
   }
 `;
 
@@ -41,5 +42,8 @@ export const SocialIcons = styled.div`
     transition: var(--transition-time);
     transform: translate(-0.1rem, -0.1rem);
     opacity: 75%;
+  }
+  @media (max-width: 992px) {
+    display: none;
   }
 `;

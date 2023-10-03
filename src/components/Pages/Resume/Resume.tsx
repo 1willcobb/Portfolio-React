@@ -1,7 +1,40 @@
+import styled from "styled-components";
+
+const StyledResume = styled.div`
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  ul {
+    padding-left: 3rem;
+  }
+  p {
+    font-weight: 400;
+  }
+  li {
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+`;
+
+const StyledResumeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+`;
+
+const StyledJobTitle = styled.div`
+  display: flex;
+  padding: 0;
+  p {
+    margin-left: auto;
+    font-weight: 300;
+  }
+`;
+
 const Resume = () => {
   return (
     <>
-      <div className="resume">
+      <StyledResume className="resume">
         <h2>Full Stack Developer</h2>
         <h3>Atascadero, CA</h3>
         <h3>(678) 446 - 7207</h3>
@@ -159,7 +192,7 @@ const Resume = () => {
             Trello • Figma • DaVinci Resolve • Blender • Adobe: Lr, Ps, Pr{" "}
           </h3>
         </div>
-      </div>
+      </StyledResume>
     </>
   );
 };
