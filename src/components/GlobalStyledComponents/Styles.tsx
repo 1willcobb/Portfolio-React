@@ -43,7 +43,4 @@ export const SocialIcons = styled.div`
     transform: translate(-0.1rem, -0.1rem);
     opacity: 75%;
   }
-  @media (max-width: 992px) {
-    display: none;
-  }
 `;

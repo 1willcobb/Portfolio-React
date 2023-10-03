@@ -47,6 +47,9 @@ const SideNavHeaders = styled.div`
   justify-content: center;
   width: 100%;
   transition: var(--transition-time);
+  @media (max-width: 992px) {
+    display: none;
+  }
   ul li {
     list-style: none;
     padding-top: 2rem;
@@ -56,6 +59,7 @@ const SideNavHeaders = styled.div`
     text-decoration: none;
     white-space: nowrap;
   }
+  
 `;
 
 const StyledLink = styled(Link)`
@@ -67,6 +71,12 @@ const StyledLink = styled(Link)`
     color: var(--hover-color);
   }
 `;
+
+const SocialIconsFooter = styled(SocialIcons)`
+    @media (max-width: 992px) {
+    display: none;
+  }
+`
 
 const SideNav = () => {
   const [sideBarEnabled, setSideBarEnabled] = useState(false);
@@ -90,6 +100,7 @@ const SideNav = () => {
         root.style.setProperty("--side-bar-size", "0");
       } else {
         root.style.setProperty("--side-bar-size", "6rem");
+        setSideBarEnabled(false)
       }
     };
 
@@ -126,7 +137,7 @@ const SideNav = () => {
           </li>
         </ul>
       </SideNavHeaders>
-      <SocialIcons>
+      <SocialIconsFooter>
         <a href="https://github.com/1willcobb">
           <img
             src="icons/brown-icon-git.png"
@@ -157,7 +168,7 @@ const SideNav = () => {
             alt="Youtube button for Will Cobb"
           />
         </a>
-      </SocialIcons>
+      </SocialIconsFooter>
     </SideNavStyled>
   );
 };

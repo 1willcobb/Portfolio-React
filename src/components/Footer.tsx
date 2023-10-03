@@ -15,6 +15,7 @@ const StyledFooter = styled.footer`
   }
 `;
 
+
 // Footer with icons
 const Footer = () => {
   return (
