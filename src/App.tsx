@@ -18,14 +18,16 @@ const StyledRoutes = styled(Routes)`
   flex: 1;
 `;
 
-const style = {
-  display: "flex",
-  flexDirection: "column" as const, 
-  justifyContent: "space-between" as const, 
-};
+const StyledMainSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+`;
 
 const BottomDiv = styled.div`
-  justifyContent: "flexEnd",
+  justify-content: flexEnd,
   bottom: 0;
   width: 100%; /* Make the div span the entire width of the viewport */
 `;
@@ -34,21 +36,19 @@ function App() {
   return (
     <>
       <SideNav />
-      <div style={style}>
-        <div>
-          <Nav />
-          <StyledRoutes>
-            <Route path="/" element={<Home />} />
-            <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume />} />
-          </StyledRoutes>
-        </div>
-        <BottomDiv>
-          <ContactForm />
-          <Footer />
-        </BottomDiv>
-      </div>
+      <Nav />
+      <StyledMainSection>
+        <StyledRoutes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+        </StyledRoutes>
+      </StyledMainSection>
+      <BottomDiv>
+        <ContactForm />
+        <Footer />
+      </BottomDiv>
     </>
   );
 }

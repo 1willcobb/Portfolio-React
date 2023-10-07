@@ -15,9 +15,12 @@ const SideNavStyled = styled.section`
   border-right: var(--borders);
   transition: width var(--transition-time);
   background-color: transparent;
+  @media (max-width: 992px) {
+    border: none;
+  }
 `;
 
-const MenuButton = styled.div`
+export const MenuButton = styled.div`
   display: flex;
   flex: 1 0 0;
   align-self: center;
@@ -26,7 +29,7 @@ const MenuButton = styled.div`
   background-color: transparent;
 `;
 
-const MenuButtonImg = styled.img`
+export const MenuButtonImg = styled.img`
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -59,7 +62,6 @@ const SideNavHeaders = styled.div`
     text-decoration: none;
     white-space: nowrap;
   }
-  
 `;
 
 const StyledLink = styled(Link)`
@@ -73,10 +75,10 @@ const StyledLink = styled(Link)`
 `;
 
 const SocialIconsFooter = styled(SocialIcons)`
-    @media (max-width: 992px) {
+  @media (max-width: 992px) {
     display: none;
   }
-`
+`;
 
 const SideNav = () => {
   const [sideBarEnabled, setSideBarEnabled] = useState(false);
@@ -100,7 +102,7 @@ const SideNav = () => {
         root.style.setProperty("--side-bar-size", "0");
       } else {
         root.style.setProperty("--side-bar-size", "6rem");
-        setSideBarEnabled(false)
+        setSideBarEnabled(false);
       }
     };
 

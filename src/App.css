@@ -34,6 +34,7 @@ h1 { font-weight: 900; }
 h2 { font-weight: 700; }
 h3 { font-weight: 400; }
 h4 { font-weight: 300; }
+p { font-weight: 300; }
 
 #root {
   display: flex;
@@ -64,18 +65,4 @@ h4 { font-weight: 300; }
   .main-body {
     flex-direction: column;
   }
-  .main-body #about-me {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .main-body #about-me {
-    display: flex;
-    flex-direction: column;
-    margin-top:2rem;
-  }
-
 }

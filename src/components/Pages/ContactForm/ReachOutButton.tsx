@@ -4,7 +4,7 @@ interface Props {
   children: string;
 }
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   padding: 2rem;
   box-shadow: 1px 1px 1px black;
   background: transparent;

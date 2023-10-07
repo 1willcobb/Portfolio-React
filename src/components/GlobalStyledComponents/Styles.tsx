@@ -1,26 +1,12 @@
 import styled from "styled-components";
 
-// Main section styes creating main blocks on the mainbody
-export const StyledBlock = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  border-bottom: var(--borders);
-  @media (max-width: 992px) {
-    flex-direction: column;
-    display: none;
-  }
-`;
 
 // Styles for all h2 titles
 export const SectionTitle = styled.div`
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
-  padding-left: 3rem;
-  padding-top: 3rem;
+  align-items: center;
   text-shadow: var(--text-pop-subtle);
 `;
 

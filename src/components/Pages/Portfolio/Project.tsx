@@ -5,13 +5,14 @@ interface Props {
   address: string;
   imgLocation: string;
   altText: string;
+  technology: string;
 }
 
 const ProjectCard = styled.div`
   display: flex;
-  flex-direction: column-reverse;
-  flex: 1 1 100%;
-  max-width: 85%;
+  flex-direction: column;
+  max-width: 500px;
+  max-height: 500px;
   border: var(--borders);
   box-shadow: var(--text-pop-subtle);
   text-shadow: var(--text-pop-subtle);
@@ -23,11 +24,12 @@ const ProjectCard = styled.div`
   }
 `;
 
-const CardTitle = styled.h3`
+const CardTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0.5rem;
+  gap: 0.5rem;
+  padding: 1rem;
   text-align: center;
   margin-bottom: 0.25rem;
 `;
@@ -35,13 +37,15 @@ const CardTitle = styled.h3`
 const CardImg = styled.img`
   width: 100%;
   height: 100%;
-  border-bottom: var(--borders);
 `;
 
-const Project = ({ cardName, address, imgLocation, altText }: Props) => {
+const Project = ({ cardName, address, imgLocation, altText, technology }: Props) => {
   return (
     <ProjectCard>
-      <CardTitle>{cardName}</CardTitle>
+      <CardTitle>
+      <h2>{cardName}</h2>
+      <p>{technology}</p>
+      </CardTitle>
       <a href={address}>
         <CardImg
           src={imgLocation}

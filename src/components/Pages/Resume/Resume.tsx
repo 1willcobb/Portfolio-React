@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
+const ResumeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
 const StyledResume = styled.div`
+  max-width: 1000px;
   padding: 3rem;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   ul {
     padding-left: 3rem;
@@ -33,8 +41,8 @@ const StyledJobTitle = styled.div`
 
 const Resume = () => {
   return (
-    <>
-      <StyledResume className="resume">
+    <ResumeContainer>
+      <StyledResume>
         <h2>Full Stack Developer</h2>
         <h3>Atascadero, CA</h3>
         <h3>(678) 446 - 7207</h3>
@@ -193,7 +201,7 @@ const Resume = () => {
           </h3>
         </div>
       </StyledResume>
-    </>
+    </ResumeContainer>
   );
 };
 

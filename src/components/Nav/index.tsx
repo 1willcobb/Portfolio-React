@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import Logo from "./Logo";
 import CallToAction from "./CallToAction";
 import NavLinks from "./NavLinks";
+import Hamburger from "./Hamburger";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -17,7 +18,6 @@ const HeaderContainer = styled.div`
   z-index: 999;
   @media (max-width: 992px) {
     width: 100%;
-    position: fixed;
     justify-content: space-between;
     top: 0;
     left: 0;
@@ -26,10 +26,12 @@ const HeaderContainer = styled.div`
 `;
 
 const Nav = () => {
+  const isMobile = window.matchMedia("(max-width: 992px)").matches;
+
   return (
     <HeaderContainer>
       <Logo />
-      <NavLinks />
+      {!isMobile ? <NavLinks /> : <Hamburger />}
       <CallToAction>Contact Me</CallToAction>
     </HeaderContainer>
   );
