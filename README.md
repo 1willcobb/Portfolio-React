@@ -6,7 +6,7 @@ Will Cobb's Developer Portfolio written with React.js
 
 Click through the projects in this portfolio to see my most recent work developing professional and personal projects.
 
-Projects include utilizing:
+Projects utilizing:
 
 React • Python • JavaScript • React Native • Django • HTML • CSS • MERN • SQL • MySQL • MongoDB • PWAs • Express.js • Node.js • Bootstrap • Tailwind • Jira • Figma and more.
 
