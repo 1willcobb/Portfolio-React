@@ -5,7 +5,6 @@ const NavUL = styled.ul`
   list-style: none;
   display: flex;
   flex: 1 0 0;
-  justify-content: flex-end;
   padding: 10px 10px;
   text-decoration: none;
   white-space: nowrap;
