@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { styled } from "styled-components";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
+import { SocialIcons } from "./GlobalStyledComponents/Styles";
 
 const SideNavStyled = styled.section`
   display: flex;
@@ -14,18 +15,22 @@ const SideNavStyled = styled.section`
   border-right: var(--borders);
   transition: width var(--transition-time);
   background-color: transparent;
+  @media (max-width: 992px) {
+    border: none;
+  }
 `;
 
-const MenuButton = styled.div`
+export const MenuButton = styled.div`
   display: flex;
   flex: 1 0 0;
   align-self: center;
   padding: 10px 10px;
   border: none;
   background-color: transparent;
+
 `;
 
-const MenuButtonImg = styled.img`
+export const MenuButtonImg = styled.img`
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -46,6 +51,9 @@ const SideNavHeaders = styled.div`
   justify-content: center;
   width: 100%;
   transition: var(--transition-time);
+  @media (max-width: 992px) {
+    display: none;
+  }
   ul li {
     list-style: none;
     padding-top: 2rem;
@@ -57,37 +65,19 @@ const SideNavHeaders = styled.div`
   }
 `;
 
-const SocialIcons = styled.div`
-  display: flex;
-  flex: 1 0 0;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-self: center;
-  padding: 10px 10px;
-  img {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    background-color: transparent;
-    filter: drop-shadow(var(--text-pop-not-subtle));
-  }
-  img:hover {
-    transition: var(--transition-time);
-    transform: translate(-0.1rem, -0.1rem);
-    opacity: 75%;
-  }
-  @media (max-width: 992px) {
-    display:none;
-  }
-`;
-
-const HashLinkStyled = styled(HashLink)`
+const StyledLink = styled(Link)`
   text-decoration: none;
   padding: 5px 15px;
   cursor: pointer;
   transition: var(--transition-time);
   &:hover {
     color: var(--hover-color);
+  }
+`;
+
+const SocialIconsFooter = styled(SocialIcons)`
+  @media (max-width: 992px) {
+    display: none;
   }
 `;
 
@@ -113,6 +103,7 @@ const SideNav = () => {
         root.style.setProperty("--side-bar-size", "0");
       } else {
         root.style.setProperty("--side-bar-size", "6rem");
+        setSideBarEnabled(false);
       }
     };
 
@@ -136,24 +127,32 @@ const SideNav = () => {
       <SideNavHeaders className={`${sideBarEnabled ? "show" : "hidden"}`}>
         <ul>
           <li>
-            <HashLinkStyled to="/pathLink#about-me-anchor">
-              About Me
-            </HashLinkStyled>
+            <StyledLink to="/aboutme">About Me</StyledLink>
           </li>
           <li>
-            <HashLinkStyled to="/pathLink#portfolio-anchor">
-              Portfolio
-            </HashLinkStyled>
+            <StyledLink to="/portfolio">Portfolio</StyledLink>
           </li>
           <li>
-            <HashLinkStyled to="/pathLink#resume-anchor">Resume</HashLinkStyled>
+            <StyledLink to="/resume">Resume</StyledLink>
           </li>
           <li>
-            <HashLinkStyled to="/pathLink#contact-form">Contact</HashLinkStyled>
+            <StyledLink to="mailto:cobb.will@gmail.com">Contact</StyledLink>
           </li>
         </ul>
       </SideNavHeaders>
-      <SocialIcons>
+      <SocialIconsFooter>
+        <a href="https://github.com/1willcobb">
+          <img
+            src="icons/brown-icon-git.png"
+            alt="github Button for Will Cobb"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/1willcobb/">
+          <img
+            src="icons/brown-icon-in.png"
+            alt="Linkedin button for Will Cobb"
+          />
+        </a>
         <a href="https://www.instagram.com/1willcobb">
           <img
             src="icons/brown-icon-IG.png"
@@ -166,19 +165,13 @@ const SideNav = () => {
             alt="Facebook button for Will Cobb"
           />
         </a>
-        <a href="https://www.linkedin.com/in/1willcobb/">
-          <img
-            src="icons/brown-icon-in.png"
-            alt="Linkedin button for Will Cobb"
-          />
-        </a>
         <a href="https://www.youtube.com/channel/UCgeSDwPH-6ttgxdPANBjQPQ">
           <img
             src="icons/brown-icon-yt.png"
             alt="Youtube button for Will Cobb"
           />
         </a>
-      </SocialIcons>
+      </SocialIconsFooter>
     </SideNavStyled>
   );
 };
