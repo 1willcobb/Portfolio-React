@@ -27,6 +27,7 @@ export const MenuButton = styled.div`
   padding: 10px 10px;
   border: none;
   background-color: transparent;
+
 `;
 
 export const MenuButtonImg = styled.img`

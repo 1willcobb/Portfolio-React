@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 const LogoStyled = styled.h1`
   padding-right: 1rem;
   white-space: nowrap;
+  @media (max-width: 750px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const StyledLink = styled(Link)`

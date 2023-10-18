@@ -11,7 +11,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   height: var(--top-nav-size);
   border-bottom: var(--borders);
-  padding-left: 4rem;
+  padding-left: 3rem;
   text-shadow: var(--text-pop-subtle);
   transition: width var(--transition-time);
   width: calc(100% - var(--side-bar-size));
@@ -23,6 +23,9 @@ const HeaderContainer = styled.div`
     align-items: center;
     height: 100%;
     gap: 2rem;
+    @media (max-width: 750px) {
+      gap: 1rem;
+    }
   }
   @media (max-width: 992px) {
     width: 100%;
@@ -30,6 +33,7 @@ const HeaderContainer = styled.div`
     top: 0;
     left: 0;
     z-index: 999;
+    padding-left: 1rem;
   }
 `;
 

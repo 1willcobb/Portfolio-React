@@ -14,7 +14,7 @@ const StyledNavLink = styled(NavLink)`
   padding: 0.5rem 2rem;
   cursor: pointer;
   white-space: nowrap;
-  height: 100%;
+  height: 3rem;
   border: var(--borders);
   background-color: var(--solid-color);
   color: var(--background-color);
