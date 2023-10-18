@@ -24,20 +24,20 @@ const StyledResume = styled.div`
   }
 `;
 
-const StyledResumeContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2rem;
-`;
+// const StyledResumeContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   padding-bottom: 2rem;
+// `;
 
-const StyledJobTitle = styled.div`
-  display: flex;
-  padding: 0;
-  p {
-    margin-left: auto;
-    font-weight: 300;
-  }
-`;
+// const StyledJobTitle = styled.div`
+//   display: flex;
+//   padding: 0;
+//   p {
+//     margin-left: auto;
+//     font-weight: 300;
+//   }
+// `;
 
 const Resume = () => {
   return (
