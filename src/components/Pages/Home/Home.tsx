@@ -41,7 +41,7 @@ const Home = () => {
         </StyledHomeSections>
         <StyledHomeSections>
           <h2>
-            Hey! I'm Will! <br /> Welcome to my portolio!
+            Hey! I'm Will! <br /> Welcome to my portfolio!
           </h2>
 
           <ActionButton newLocation="/aboutme">More About Me</ActionButton>
@@ -51,7 +51,7 @@ const Home = () => {
             This portfolio was built using React.js.
             <br />
             <br/>
-            Feel free to take a look around at my full stack projects utalizing
+            Feel free to take a look around at my full stack projects utilizing
             the MERN stack, (MongoDB, Express, React, Node.js), MySQL, JS,
             Python, and more!
           </h3>
