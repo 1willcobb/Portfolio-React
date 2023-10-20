@@ -66,12 +66,12 @@ const Home = () => {
           </StyledHomeSectionCol>
 
           <Project
-            key="Tech Blog"
-            cardName="Tech Blog"
-            address="https://tech-blog-1willcobb-830bce22bbd8.herokuapp.com/"
-            imgLocation="gif/tech_blog.webp"
-            altText="Tech Blog Image"
-            technology="Express, Node.js, MySQL, Sequelize, Heroku"
+            key="wedloc"
+            cardName="Wedloc"
+            address="https://wedloc-84c89e3ae29d.herokuapp.com/"
+            imgLocation="gif/wedloc gif.gif"
+            altText="Wedloc"
+            technology="React.js, Node.js, Express.js, MongoDB, GraphQL, Cloudinary"
           />
         </StyledHomeSections>
       </StyledHomePage>
