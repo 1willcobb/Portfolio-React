@@ -66,7 +66,7 @@ const Home = () => {
           </StyledHomeSectionCol>
 
           <Project
-            key="Tech Blog"
+            key="wedloc"
             cardName="Wedloc"
             address="https://wedloc-84c89e3ae29d.herokuapp.com/"
             imgLocation="gif/wedloc gif.gif"
