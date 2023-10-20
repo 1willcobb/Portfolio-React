@@ -22,6 +22,13 @@ const StyledPortfolioContainer = styled.div`
 const Portfolio = () => {
   const projectsList = [
     {
+      cardName: "Wedloc",
+      address: "https://wedloc-84c89e3ae29d.herokuapp.com/",
+      imgLocation: "gif/wedloc gif.gif",
+      altText: "Wedloc",
+      technology: "React.js, Node.js, Express.js, MongoDB, GraphQL, Cloudinary",
+    },
+    {
       cardName: "Task Titan",
       address: "https://task-titan-bec51c55ebe5.herokuapp.com/",
       imgLocation: "gif/task_titan.webp",
